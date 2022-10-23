@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ParkingSlots from '../ParkingSlotsDb'
 
 const CreateArea = (props) => {
     const [carSize, setCarSize] = useState("");
@@ -13,11 +14,11 @@ const CreateArea = (props) => {
         status: "vacant"
     });
 
-    const generateParking = () => {
-        for (let i = 0; i < 12; i++) {
-            props.onAdd(create);
-        }
-    }
+    // const generateParking = () => {
+    //     for (let i = 0; i < 12; i++) {
+    //         props.onAdd(create);
+    //     }
+    // }
 
     return (
         <div>
@@ -52,7 +53,7 @@ const CreateArea = (props) => {
                 />
                 <label for="large">Large</label>
             </div>
-            <button onClick={generateParking}>Generate Parking Lot</button>
+            {/* <button onClick={generateParking}>Generate Parking Lot</button> */}
             <button onClick={() => props.handleEntranceOne()}>Enter</button>
             <button>Enter</button>
             <button>Enter</button>
