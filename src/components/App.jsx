@@ -15,6 +15,9 @@ const App = () => {
   }
 
   const handleEntranceOne = () => {
+    const timeString = new Date().toLocaleTimeString();
+    const time = new Date().getTime();
+    console.log(timeString)
     console.log(vacantParkingLot);
     let entrance = 2.5;
     let closest = vacantParkingLot.reduce(function (prev, curr) {
@@ -33,7 +36,7 @@ const App = () => {
           });
         });
 
-        return { ...obj, status: 'occupied' };
+        return { ...obj, status: 'occupied', timein: time, timeString: timeString };
       }
       return obj;
     })
@@ -42,6 +45,9 @@ const App = () => {
 
 
   const handleEntranceTwo = () => {
+    const timeString = new Date().toLocaleTimeString();
+    const time = new Date().getTime();
+    console.log(timeString)
     console.log(vacantParkingLot);
     let entrance = 5.5;
     let closest = vacantParkingLot.reduce(function (prev, curr) {
@@ -60,7 +66,7 @@ const App = () => {
           });
         });
 
-        return { ...obj, status: 'occupied' };
+        return { ...obj, status: 'occupied', timein: time, timeString: timeString };
       }
       return obj;
     })
@@ -69,6 +75,9 @@ const App = () => {
 
 
   const handleEntranceThree = () => {
+    const timeString = new Date().toLocaleTimeString();
+    const time = new Date().getTime();
+    console.log(timeString)
     console.log(vacantParkingLot);
     let entrance = 8.5;
     let closest = vacantParkingLot.reduce(function (prev, curr) {
@@ -87,15 +96,12 @@ const App = () => {
           });
         });
 
-        return { ...obj, status: 'occupied' };
+        return { ...obj, status: 'occupied', timein: time, timeString: timeString };
       }
       return obj;
     })
     );
   }
-
-
-
 
   return (
     <div>
@@ -113,6 +119,7 @@ const App = () => {
               key={index}
               size={parkingSlot.size}
               status={parkingSlot.status}
+              timeString={parkingSlot.timeString}
             />
           ))}
         </div>
