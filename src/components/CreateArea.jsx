@@ -55,8 +55,8 @@ const CreateArea = (props) => {
             </div>
             {/* <button onClick={generateParking}>Generate Parking Lot</button> */}
             <button onClick={() => props.handleEntranceOne()}>Enter</button>
-            <button>Enter</button>
-            <button>Enter</button>
+            <button onClick={() => props.handleEntranceTwo()}>Enter</button>
+            <button onClick={() => props.handleEntranceThree()}>Enter</button>
         </div>
     )
 }
