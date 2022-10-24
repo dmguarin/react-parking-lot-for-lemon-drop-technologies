@@ -183,14 +183,14 @@ const App = () => {
             />
           ))}
         </div>
-        <div className='min-w-[1440px]'>
+        <div className='min-w-[1700px] flex'>
           <div className='inline-block bg-black w-[325px] h-[20px]'></div>
           <button className="inline-block font-bold py-0.5 px-4 rounded bg-green-500 text-white hover:bg-yellow-300" onClick={handleEntranceOne}>ENTER</button>
           <div className='inline-block bg-black w-[315px] h-[20px]'></div>
           <button className="inline-block font-bold py-0.5 px-4 rounded bg-green-500 text-white hover:bg-yellow-300" onClick={handleEntranceTwo}>ENTER</button>
           <div className='inline-block bg-black w-[307px] h-[20px]'></div>
           <button className="inline-block font-bold py-0.5 px-4 rounded bg-green-500 text-white hover:bg-yellow-300" onClick={handleEntranceThree}>ENTER</button>
-          <div className='inline-block bg-black w-[328px] h-[20px]'></div>
+          <div className='inline-block bg-black w-[327px] h-[20px]'></div>
         </div>
       </div>
 
