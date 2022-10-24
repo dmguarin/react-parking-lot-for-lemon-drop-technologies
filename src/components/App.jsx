@@ -7,7 +7,6 @@ import ParkingSlotsDb from '../ParkingSlotsDb'
 import Receipt from './Receipt'
 
 const App = () => {
-  // let timeDisplay, clientTotalPayment;
 
   const [timeDisplay, setTimeDisplay] = useState('');
   const [clientTotalPayment, setClientTotalPayment] = useState('');
@@ -119,7 +118,9 @@ const App = () => {
         setTimeDisplay(msToHMS(timeOut - obj.timein));
         setClientTotalPayment(calculateTotalPayment(timeDiffInHr));
         console.log(clientTotalPayment);
-        return { ...obj, status: 'vacant' };
+        setVacantParkingLot((prevValue) => [...prevValue, id]);
+        console.log(vacantParkingLot);
+        return { ...obj, status: 'vacant', timein: "", timeString: "" };
       }
       return obj;
     })
