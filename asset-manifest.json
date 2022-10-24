@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-parking-lot-for-lemon-drop-technologies/static/css/main.610d85b9.css",
-    "main.js": "/react-parking-lot-for-lemon-drop-technologies/static/js/main.45a69f4b.js",
+    "main.css": "/react-parking-lot-for-lemon-drop-technologies/static/css/main.c077b771.css",
+    "main.js": "/react-parking-lot-for-lemon-drop-technologies/static/js/main.54aa291b.js",
     "index.html": "/react-parking-lot-for-lemon-drop-technologies/index.html",
-    "main.610d85b9.css.map": "/react-parking-lot-for-lemon-drop-technologies/static/css/main.610d85b9.css.map",
-    "main.45a69f4b.js.map": "/react-parking-lot-for-lemon-drop-technologies/static/js/main.45a69f4b.js.map"
+    "main.c077b771.css.map": "/react-parking-lot-for-lemon-drop-technologies/static/css/main.c077b771.css.map",
+    "main.54aa291b.js.map": "/react-parking-lot-for-lemon-drop-technologies/static/js/main.54aa291b.js.map"
   },
   "entrypoints": [
-    "static/css/main.610d85b9.css",
-    "static/js/main.45a69f4b.js"
+    "static/css/main.c077b771.css",
+    "static/js/main.54aa291b.js"
   ]
 }
